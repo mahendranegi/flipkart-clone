@@ -1,0 +1,110 @@
+body{
+        font-family: "Museo Sans", sans-serif;
+        font-size: 14px;
+        background: #f6f6f6;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0 !important;
+}
+.conatiner{
+    width: 1280px;
+    margin: 0 auto;
+}
+.productsSection {
+   display: flex;
+   gap: 16px;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   & aside:hover{
+    box-shadow: 0 3px 16px 0 rgba(0, 0, 0, .11);
+   }
+   
+   & aside {
+width: 32%;
+padding: 24px;
+transition: 900ms;
+cursor: pointer;
+box-sizing: border-box;
+border-radius: 8px;
+& p{
+    margin: 0;
+    padding: 16px 0 12px;
+                display: flex;
+                            color: #717171;
+            gap: 8px;
+            align-items: center;
+    & > span{
+            background: #388e3c;
+    color: #fff;
+    font-size: 12px;
+    padding: 4px;
+    border-radius: 4px;
+    gap: 4px;
+    align-items: center;
+    width: fit-content;
+    display: flex;
+    }
+}
+    & > a > div{
+    border-radius: 12px;
+    
+    height: 400px;
+    overflow: hidden;
+    & img{
+           height: 100%;
+                         
+    }
+   }
+   }
+}
+header .conatiner{
+    display: flex;
+     justify-content: space-between;
+    gap: 16px;
+    & > div{
+        width: 100%;
+        display: flex;
+        gap: 12px;
+                justify-content: end;
+       align-items: center;
+      
+    }
+}
+header{
+   background: #fff;
+    padding: 24px 0;
+    color: #fff;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    border-top: 3px solid #2c4152;
+    z-index: 9;
+    border-bottom: 1px solid #e0e0e0;
+}
+.addToCart{
+    position: relative;
+    & em{
+        display: flex;
+        font-style: normal;
+        position: absolute;
+        right: -14px;
+        top: -14px;
+        width: 16px;
+        border-radius: 50%;
+        background: #f44336;
+        color: #fff;
+        font-size: 12px;
+        height: 16px;
+        padding: 5px;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+        line-height: initial;
+    }
+}
+.HeaderFixed{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+}
